@@ -115,7 +115,7 @@ body {
 
 .footer h3 span::after {
     color: white;
-    content: " by Ali Fayaz";
+    content: " by Ali Fayaz Abbasi";
     animation: text_anim 3s infinite ease-in-out;
 }
 
@@ -129,6 +129,6 @@ body {
         content: " by Ali Abbas Nagari";
     }
     100% {
-        content: " by Shehbaz";
+        content: " by Shehbaz Karim";
     }
 }
