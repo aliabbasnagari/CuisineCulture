@@ -28,8 +28,49 @@ body {
     width: 50%;
     text-align: right;
 }
+
+.nav_right button {
+    background: #fca311;
+    border: none;
+    margin: 5px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+.nav_right button:hover {
+    background: #14213d;
+    color: #fca311;
+}
+
+.nav_right button:hover span::after {
+    content: " \00bb";
+    transition-duration: 0.3s;
+}
+
 .nav_left {
+    display: flex;
     width: 50%;
+}
+
+.nav_left button {
+    background: #11c5fc;
+    width: 110px;
+    border: solid 2px #11c5fc;
+    margin: 5px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+.nav_left button:hover {
+    background: #1c7792b9;
+    border: solid 2px white;
+    color: white;
 }
 
 .logo {
@@ -57,28 +98,6 @@ body {
     text-align: center;
     overflow: auto;
     padding-bottom: 100px;
-}
-
-.hbtn {
-    background: #fca311;
-    border: none;
-    margin: 5px;
-    padding: 10px;
-    width: 100px;
-    font-size: 18px;
-    border-radius: 8px;
-    text-decoration: none;
-    transition-duration: 0.3s;
-}
-
-.hbtn:hover {
-    background: #14213d;
-    color: #fca311;
-}
-
-.hbtn:hover span::after {
-    content: " \00bb";
-    transition-duration: 0.3s;
 }
 
 .footer {
