@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    background: url(../img/food_bg_1.jpg) center center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wrap_body {
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main {
+    color: white;
+    padding-bottom: 100px;
+}
+
+.pcards {
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.pcard {
+    padding: 20px;
+    margin: 15px;
+    width: 100%;
+    color: black;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.pcard:hover {
+    transform: scale(1.01);
+    background: rgb(250, 250, 250);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.pcard div {
+    display: flex;
+}
+
+.pcard div div {
+    margin: 10px;
+    width: 100%;
+    display: block;
+}
+
+.pcard input {
+    width: 100%;
+    height: 25px;
+    padding: 5px;
+}
+
+.pcard button {
+    font-size: 18px;
+    color: white;
+    background: #008cba;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.pcard button:hover {
+    background: #00bfff;
+}
+
+.paycard {
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.paycard:hover {
+    transform: scale(1.2);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}

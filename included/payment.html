@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="../img/icons/fav_icon.png" type="image/x-icon" />
+        <title>Cuisine Culture</title>
+        <link rel="stylesheet" href="../style/hdr_ftr.css" />
+        <link rel="stylesheet" href="../style/style_a2.css" />
+
+        <style>
+            @media (max-width: 767px) {
+                .hidden {
+                    display: none;
+                }
+            }
+
+            .hidden {
+                margin-top: 30px;
+                border-top-right-radius: 30px;
+                border-bottom-right-radius: 30px;
+                padding: 20px;
+                width: 150px;
+                background: rgba(255, 255, 255, 0.7);
+                overflow: hidden;
+            }
+
+            .hidden img {
+                margin: 10px;
+                width: 90%;
+            }
+            .due {
+                width: 100%;
+                display: flex;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap_body">
+            <section class="title_hdr">
+                <a href="../index.html">
+                    <img src="../img/logos/logo.png" alt="AWSI" title="AWSI" />
+                </a>
+                <h1 style="font-size: 38px">Cuisine Culture</h1>
+            </section>
+            <header class="header">
+                <div class="nav_left">
+                    <div class="buttons">
+                        <a href="../index.html">
+                            <button><span class="icohome">Home</span></button>
+                        </a>
+                        <hr />
+                        <a href="#2">
+                            <button><span class="icomenu">Menu</span></button>
+                        </a>
+                        <hr />
+                        <a href="#3">
+                            <button><span class="icodeals">Deals</span></button>
+                        </a>
+                        <hr />
+                        <a href="#4">
+                            <button><span class="icocart">Cart</span></button>
+                        </a>
+                        <hr />
+                        <a href="/included/payment.html">
+                            <button>
+                                <span class="icopayment">payment</span>
+                            </button>
+                        </a>
+                        <hr />
+                    </div>
+                </div>
+                <div class="nav_right">
+                    <div>
+                        <a href="#2">
+                            <button class="login"><span>log In</span></button>
+                        </a>
+                        <a href="#2">
+                            <button class="signup"><span>Sign up</span></button>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <div class="main">
+                <section class="due">
+                    <section class="hidden">
+                        <img class="paycard" src="../img/payments/discover_network_card.png" />
+                        <img class="paycard" src="../img/payments/google_wallet.png" />
+                        <img class="paycard" src="../img/payments/master_card.png" />
+                        <img class="paycard" src="../img/payments/paypal.png" />
+                        <img class="paycard" src="../img/payments/western_union.png" />
+                        <img class="paycard" src="../img/payments/american_express_card.png" />
+                    </section>
+                    <div class="pcards">
+                        <div class="pcard">
+                            <h1>Make Payment</h1>
+                            <hr>
+                            <div>
+                                <div>
+                                    <h1>Name</h1>
+                                    <input type="text" placeholder="Name on Card" />
+                                </div>
+                                <div>
+                                    <h1>Postal code</h1>
+                                    <input type="number" placeholder="12345" />
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <h1>Email</h1>
+                                    <input type="email" placeholder="i.e. cuisineculture@xyz.com" />
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <h1>Card Number</h1>
+                                    <input style="width: 100%;" type="number" placeholder="0123XXXXXXXXXXXXX" />
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <h1>Expiration</h1>
+                                    <input type="date"/>
+                                </div>
+                                <div>
+                                    <h1>CVV</h1>
+                                    <input type="number" placeholder="123" />
+                                </div>
+                            </div>
+                            <a href="#order"><button>Pay Now</button></a>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </div>
+        <footer class="footer">
+            <h3 class="dev_tag">Developed with <span></span></h3>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    background: url(../img/food_bg_1.jpg) center center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wrap_body {
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main {
+    color: white;
+    padding-bottom: 100px;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cards {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 15px;
+    width: 300px;
+    color: black;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text";
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.card-img {
+    grid-area: image;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-txt {
+    grid-area: text;
+    margin: 25px;
+}
+
+.card button {
+    font-size: 18px;
+    color: white;
+    background: #008cba;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.card button:hover {
+    background: #00bfff;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    background: rgb(220, 220, 220);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
