@@ -12,7 +12,7 @@
     <body>
         <div class="wrap_body">
             <section class="title_hdr">
-                <a href="../index.html">
+                <a href="home.html">
                     <img src="../img/logos/logo.png" alt="AWSI" title="AWSI" />
                 </a>
                 <h1 style="font-size: 38px">Cuisine Culture</h1>
@@ -20,7 +20,7 @@
             <header class="header">
                 <div class="nav_left">
                     <div class="buttons">
-                        <a href="../index.html">
+                        <a href="home.html">
                             <button><span class="icohome">Home</span></button>
                         </a>
                         <hr />
@@ -28,15 +28,15 @@
                             <button><span class="icomenu">Menu</span></button>
                         </a>
                         <hr />
-                        <a href="#3">
+                        <a href="deals.html">
                             <button><span class="icodeals">Deals</span></button>
                         </a>
                         <hr />
-                        <a href="#4">
+                        <a href="cart.html">
                             <button><span class="icocart">Cart</span></button>
                         </a>
                         <hr />
-                        <a href="/included/payment.html">
+                        <a href="payment.html">
                             <button>
                                 <span class="icopayment">payment</span>
                             </button>
@@ -46,10 +46,10 @@
                 </div>
                 <div class="nav_right">
                     <div>
-                        <a href="#2">
+                        <a href="../index.html">
                             <button class="login"><span>log In</span></button>
                         </a>
-                        <a href="#2">
+                        <a href="signup.html">
                             <button class="signup"><span>Sign up</span></button>
                         </a>
                     </div>
@@ -64,23 +64,32 @@
                         <img class="paycard" src="../img/payments/western_union.png" />
                         <img class="paycard" src="../img/payments/american_express_card.png" />
                     </div>
-                    <form class="pcard">
+                    <form action="home.html" class="pcard">
                         <h1>Make Payment</h1>
                         <hr />
                         <div>
                             <div>
                                 <h3>Name</h3>
-                                <input name="name" type="text" placeholder="Name on Card" />
+                                <input
+                                    name="name"
+                                    type="text"
+                                    placeholder="Name on Card"
+                                    required
+                                />
                             </div>
                             <div>
                                 <h3>Postal code</h3>
-                                <input type="number" placeholder="12345" />
+                                <input type="number" placeholder="12345" required />
                             </div>
                         </div>
                         <div>
                             <div>
                                 <h3>Email</h3>
-                                <input type="email" placeholder="i.e. cuisineculture@xyz.com" />
+                                <input
+                                    type="email"
+                                    placeholder="i.e. cuisineculture@xyz.com"
+                                    required
+                                />
                             </div>
                         </div>
                         <div>
@@ -90,27 +99,28 @@
                                     style="width: 100%"
                                     type="number"
                                     placeholder="0123XXXXXXXXXXXXX"
+                                    required
                                 />
                             </div>
                         </div>
                         <div>
                             <div>
                                 <h3>Expiration</h3>
-                                <input type="date" />
+                                <input type="date" required />
                             </div>
                             <div>
                                 <h3>CVV</h3>
-                                <input type="number" placeholder="123" />
+                                <input type="number" placeholder="123" required />
                             </div>
                         </div>
-                        <a href="#order"><button onclick="pop()">Pay Now</button></a>
+                        <a href="#"><button onclick="pop()">Pay Now</button></a>
                     </form>
                 </section>
             </div>
         </div>
         <footer class="footer">
             <div class="rows">
-                <div class="col">
+                <div class="col n1">
                     <h4>About Us</h4>
                     <hr />
                     <div class="info">
@@ -121,12 +131,12 @@
                         </ul>
                         <ul>
                             <li><a href="#">Shehbaz Karim</a></li>
-                            <li><a href="#">shehbaz@gmail.com</a></li>
+                            <li><a href="#">shehbaz.qutoshi@gmail.com</a></li>
                             <li><a href="#">+923432291361</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col n2">
                     <h4>Follow Us</h4>
                     <hr />
                     <div class="social">
@@ -145,7 +155,7 @@
                     </div>
                 </div>
             </div>
-            <h3 class="dev_tag">Developed with <span></span></h3>
+            <h4 class="dev_tag">Developed with <span></span></h4>
         </footer>
         <script>
             function pop() {

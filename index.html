@@ -4,16 +4,15 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" href="img/icons/fav_icon.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="../img/icons/fav_icon.png" type="image/x-icon" />
         <title>Cuisine Culture</title>
         <link rel="stylesheet" href="style/hdr_ftr.css" />
-        <link rel="stylesheet" href="style/dishes.css" />
-        <link rel="stylesheet" href="style/style_a1.css" />
+        <link rel="stylesheet" href="style/style_l.css" />
     </head>
     <body>
         <div class="wrap_body">
             <section class="title_hdr">
-                <a href="#home">
+                <a href="index.html">
                     <img src="img/logos/logo.png" alt="AWSI" title="AWSI" />
                 </a>
                 <h1 style="font-size: 38px">Cuisine Culture</h1>
@@ -21,23 +20,23 @@
             <header class="header">
                 <div class="nav_left">
                     <div class="buttons">
-                        <a href="#1">
+                        <a onclick="pop()" href="index.html">
                             <button><span class="icohome">Home</span></button>
                         </a>
                         <hr />
-                        <a href="./included/menu.html">
+                        <a onclick="pop()" href="index.html">
                             <button><span class="icomenu">Menu</span></button>
                         </a>
                         <hr />
-                        <a href="#3">
+                        <a onclick="pop()" href="index.html">
                             <button><span class="icodeals">Deals</span></button>
                         </a>
                         <hr />
-                        <a href="#4">
+                        <a onclick="pop()" href="index.html">
                             <button><span class="icocart">Cart</span></button>
                         </a>
                         <hr />
-                        <a href="./included/payment.html">
+                        <a onclick="pop()" href="index.html">
                             <button>
                                 <span class="icopayment">payment</span>
                             </button>
@@ -47,79 +46,64 @@
                 </div>
                 <div class="nav_right">
                     <div>
-                        <a href="#2">
+                        <a href="included/home.html">
                             <button class="login"><span>log In</span></button>
                         </a>
-                        <a href="#2">
+                        <a href="included/signup.html">
                             <button class="signup"><span>Sign up</span></button>
                         </a>
                     </div>
                 </div>
             </header>
             <div class="main">
-                <h1>Trending</h1>
-                <section class="cards">
-                    <div class="card">
-                        <div class="img1 card-img"></div>
-                        <div class="card-txt">
-                            <h2>Chapshoro</h2>
-                            <p>
-                                Chapshuro is one of the most delicious dishes of Gilgit Baltistan.
-                                Chap Shuroo is a bread filled with a mixture of chopped Beef/Yalk
-                                meat, onion, and other spices. Chapshoro is filled with chopped meat
-                                (lamb, beef), onions, chile peppers, tomato and fresh coriander
-                                leaves.
-                            </p>
-                            <a href="#order"><button>Order now!</button></a>
+                <div class="forms">
+                    <form action="included/home.html" class="login_form">
+                        <div class="field_container">
+                            <input type="email" placeholder="Email Address" required />
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="img2 card-img"></div>
-                        <div class="card-txt">
-                            <h2>Karahi</h2>
-                            <p>
-                                Karahi is a dish from Pakistan known for its spicy flavour. It is
-                                notable in the kitchens of northern India and Pakistan. Chicken
-                                karahi is unique and the distinguishing features are its tomato like
-                                base and its fragrance as well as the finishing cilantro, green
-                                chili peppers, and slivers of ginger.
-                            </p>
-                            <a href="#order"><button>Order now!</button></a>
+                        <div class="field_container">
+                            <input type="Password" placeholder="Password" required />
+                            <button class="login"><span>log In</span></button>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="img3 card-img"></div>
-                        <div class="card-txt">
-                            <h2>Mamtu (dumplings)</h2>
-                            <p>
-                                Mamtu (a.k.a Mantu) are special dumplings from Gilgit Baltistan
-                                which are used as perfect starters or great party food. They are
-                                easy to make and fun for children too. They are served with yogurt
-                                and parsley and black pepper, vinegar, chili sauce.
-                            </p>
-                            <a href="#order"><button>Order now!</button></a>
+                        <div id="sign_in_options" class="field_container">
+                            <div id="sign_in_alternatives_container"></div>
+                            <div id="remember_me_container">
+                                <input name="user[remember_me]" type="hidden" value="0" /><input
+                                    id="user_remember_me"
+                                    name="user[remember_me]"
+                                    type="checkbox"
+                                    value="1"
+                                />
+                                <label
+                                    class="login_link"
+                                    for="user_remember_me"
+                                    id="remember_me_label"
+                                    >stay signed in</label
+                                >
+                                <div>
+                                    <h4 style="float: right">
+                                        <a href="#">reset</a> your password?
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
                         </div>
+                    </form>
+                    <div id="dont_have_an_account">
+                        <h2>
+                            Are you new,
+                            <a href="included/signup.html">
+                                <button class="signup"><span>Sign up</span></button>
+                            </a>
+                            Now.
+                        </h2>
                     </div>
-                    <div class="card">
-                        <div class="img4 card-img"></div>
-                        <div class="card-txt">
-                            <h2>Salad</h2>
-                            <p>
-                                Enjoy the famous Salad - a dish consisting of mixed pieces of fresh
-                                vegies, typically with at least one raw ingredient. They are often
-                                dressed, and typically served at room temperature or chilled, though
-                                some can be served warm. Most customers seem fit to have a delicious
-                                salad as a primary meal.
-                            </p>
-                            <a href="#order"><button>Order now!</button></a>
-                        </div>
-                    </div>
-                </section>
+                </div>
             </div>
         </div>
         <footer class="footer">
             <div class="rows">
-                <div class="col">
+                <div class="col n1">
                     <h4>About Us</h4>
                     <hr />
                     <div class="info">
@@ -135,7 +119,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col n2">
                     <h4>Follow Us</h4>
                     <hr />
                     <div class="social">
@@ -154,7 +138,12 @@
                     </div>
                 </div>
             </div>
-            <h3 class="dev_tag">Developed with <span></span></h3>
+            <h4 class="dev_tag">Developed with <span></span></h4>
         </footer>
+        <script>
+            function pop() {
+                alert("Login to Access!");
+            }
+        </script>
     </body>
 </html>

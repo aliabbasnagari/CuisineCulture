@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: montserrat;
+}
+
+html,
+body {
+    height: 100%;
+    background: url(../img/food_bg_9.jpg) center center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wrap_body {
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main {
+    color: white;
+    padding-bottom: 197px;
+}
+
+.order_list {
+    background: rgb(39, 39, 39);
+    margin: 50px 0px 0px 50px;
+    padding: 30px;
+    width: 40%;
+    min-width: 300px;
+    min-height: 300px;
+    border-radius: 8px;
+}
+
+.order_list div {
+    width: 100%;
+    display: flex;
+}
+
+.order_list div a {
+    width: 50%;
+    background: #f44336;
+}
+
+.order_list div a:last-child {
+    width: 50%;
+    background: #000000;
+}
+
+.order_list a:hover {
+    background: #cf3a2f;
+}
+
+.order_list a:last-child:hover {
+    background: #1f1f1f;
+}
+
+.order_list button {
+    width: 100%;
+    font-size: 14px;
+    color: white;
+    background: none;
+    border: none;
+    padding: 20px;
+}
+
+.order_list hr {
+    border: solid 1px;
+    margin: 5px 0px 20px 0px;
+}
+
+.order_list div ul:not(:first-child) li {
+    list-style: none;
+}
+
+.order_list ul {
+    margin: 20px;
+    list-style: decimal;
+}
+
+.order_list ul li {
+    font-size: 16px;
+    color: #bbbbbb;
+    font-weight: 300;
+}
+
+.order_list h2 {
+    font-weight: 500;
+    margin-bottom: 30px;
+}

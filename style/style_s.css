@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: montserrat;
+}
+
+html,
+body {
+    height: 100%;
+    background: url(../img/food_bg_9.jpg) center center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrap_body {
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main {
+    color: white;
+    padding-bottom: 197px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    font-size: 18px;
+    padding: 15px;
+    margin: 2px 0 18px 0;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 8px;
+}
+label {
+    font-size: 18px;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+hr {
+    border: 1px solid #f1f1f1;
+    margin: 5px;
+}
+.reg,
+.cancel {
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #42b72a;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    opacity: 1;
+}
+
+.cancel {
+    padding: 13px 10px;
+    background-color: #969292;
+}
+
+.reg:hover,
+.cancel:hover {
+    opacity: 0.9;
+}
+
+.formContainer {
+    padding: 100px;
+}
+.formContainer p {
+    font-size: 20px;
+}

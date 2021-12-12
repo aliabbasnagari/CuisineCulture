@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family: montserrat;
 }
 
 html,
@@ -19,15 +19,28 @@ body {
 }
 
 .main {
-    padding-bottom: 200px;
     color: white;
-    align-content: center;
-    align-items: center;
     text-align: center;
+    padding-bottom: 197px;
+}
+
+.main h1 {
+    margin-top: 5px;
+    font-weight: normal;
+}
+
+.main h2 {
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+.main hr {
+    border: solid 2px #e91e63;
+    width: 50px;
+    margin-bottom: 30px;
 }
 
 .cards {
-    margin: 20px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -39,7 +52,7 @@ body {
     color: black;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 210px 210px 80px;
+    grid-template-rows: 210px 250px 60px;
     grid-template-areas: "image" "text";
     border-radius: 18px;
     background: white;
@@ -59,7 +72,7 @@ body {
 
 .card-txt {
     grid-area: text;
-    margin: 25px;
+    margin: 0px 25px 0px 25px;
 }
 
 .card button {
@@ -80,4 +93,9 @@ body {
     transform: scale(1.1);
     background: rgb(220, 220, 220);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(../fonts/montserrat_r.ttf);
 }

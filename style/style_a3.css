@@ -21,6 +21,7 @@ body {
 .main {
     color: white;
     padding-bottom: 197px;
+    text-align: center;
 }
 
 .cards {
@@ -31,30 +32,37 @@ body {
 }
 
 .card {
-    padding: 10px;
     margin: 15px;
-    width: 200px;
+    width: 300px;
     color: black;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 150px 100px;
+    grid-template-rows: 250px 100px 80px;
     grid-template-areas: "image" "text";
+    border-radius: 18px;
     background: white;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
     transition: 0.3s ease;
     cursor: pointer;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    padding: 5px;
 }
 
 .btn-price {
     display: inline-flex;
     align-items: center;
     border: solid 2px #f44336;
+    border-radius: 15px;
 }
 
 .card-img {
     grid-area: image;
     background-size: cover;
     background-position: center;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
 .card-txt {
@@ -63,22 +71,28 @@ body {
     margin-top: 10px;
 }
 
-.card a {
+.btn-price a {
+    align-content: center;
     width: 50%;
+    height: 100%;
+    background: #f44336;
+    border-radius: 11px;
 }
 
-.card h3 {
+.btn-price h3 {
+    width: 50%;
     color: #f44336;
 }
-.card button {
+.btn-price button {
+    margin-top: 20px;
     font-size: 14px;
     color: white;
-    background: #f44336;
+    background: none;
     border: none;
     padding: 10px;
 }
 
-.card button:hover {
+.card a:hover {
     background: #cf3a2f;
 }
 
@@ -88,25 +102,7 @@ body {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
 }
 
-@media (max-width: 699px) {
-    .card {
-        padding: 3px;
-        margin: 15px;
-        width: 150px;
-        color: black;
-        font-size: 10px;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 80px 80px;
-        grid-template-areas: "image" "text";
-        background: white;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
-        transition: 0.3s ease;
-        cursor: pointer;
-    }
-    .card-txt {
-        font-size: 10px;
-        grid-area: text;
-        margin-top: 10px;
-    }
+.card h1 {
+    color: rgb(25, 0, 255);
+    font-size: 30px;
 }
