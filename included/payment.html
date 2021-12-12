@@ -7,34 +7,7 @@
         <link rel="shortcut icon" href="../img/icons/fav_icon.png" type="image/x-icon" />
         <title>Cuisine Culture</title>
         <link rel="stylesheet" href="../style/hdr_ftr.css" />
-        <link rel="stylesheet" href="../style/style_a2.css" />
-
-        <style>
-            @media (max-width: 767px) {
-                .hidden {
-                    display: none;
-                }
-            }
-
-            .hidden {
-                margin-top: 30px;
-                border-top-right-radius: 30px;
-                border-bottom-right-radius: 30px;
-                padding: 20px;
-                width: 150px;
-                background: rgba(255, 255, 255, 0.7);
-                overflow: hidden;
-            }
-
-            .hidden img {
-                margin: 10px;
-                width: 90%;
-            }
-            .due {
-                width: 100%;
-                display: flex;
-            }
-        </style>
+        <link rel="stylesheet" href="../style/style_a5.css" />
     </head>
     <body>
         <div class="wrap_body">
@@ -51,7 +24,7 @@
                             <button><span class="icohome">Home</span></button>
                         </a>
                         <hr />
-                        <a href="#2">
+                        <a href="menu.html">
                             <button><span class="icomenu">Menu</span></button>
                         </a>
                         <hr />
@@ -83,59 +56,101 @@
                 </div>
             </header>
             <div class="main">
-                <section class="due">
-                    <section class="hidden">
-                        <img class="paycard" src="../img/payments/discover_network_card.png" />
+                <section class="pay_div">
+                    <div class="pay_methods">
                         <img class="paycard" src="../img/payments/google_wallet.png" />
                         <img class="paycard" src="../img/payments/master_card.png" />
                         <img class="paycard" src="../img/payments/paypal.png" />
                         <img class="paycard" src="../img/payments/western_union.png" />
                         <img class="paycard" src="../img/payments/american_express_card.png" />
-                    </section>
-                    <div class="pcards">
-                        <div class="pcard">
-                            <h1>Make Payment</h1>
-                            <hr>
+                    </div>
+                    <form class="pcard">
+                        <h1>Make Payment</h1>
+                        <hr />
+                        <div>
                             <div>
-                                <div>
-                                    <h1>Name</h1>
-                                    <input type="text" placeholder="Name on Card" />
-                                </div>
-                                <div>
-                                    <h1>Postal code</h1>
-                                    <input type="number" placeholder="12345" />
-                                </div>
+                                <h3>Name</h3>
+                                <input name="name" type="text" placeholder="Name on Card" />
                             </div>
                             <div>
-                                <div>
-                                    <h1>Email</h1>
-                                    <input type="email" placeholder="i.e. cuisineculture@xyz.com" />
-                                </div>
+                                <h3>Postal code</h3>
+                                <input type="number" placeholder="12345" />
                             </div>
-                            <div>
-                                <div>
-                                    <h1>Card Number</h1>
-                                    <input style="width: 100%;" type="number" placeholder="0123XXXXXXXXXXXXX" />
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <h1>Expiration</h1>
-                                    <input type="date"/>
-                                </div>
-                                <div>
-                                    <h1>CVV</h1>
-                                    <input type="number" placeholder="123" />
-                                </div>
-                            </div>
-                            <a href="#order"><button>Pay Now</button></a>
                         </div>
-                    </section>
+                        <div>
+                            <div>
+                                <h3>Email</h3>
+                                <input type="email" placeholder="i.e. cuisineculture@xyz.com" />
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h3>Card Number</h3>
+                                <input
+                                    style="width: 100%"
+                                    type="number"
+                                    placeholder="0123XXXXXXXXXXXXX"
+                                />
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h3>Expiration</h3>
+                                <input type="date" />
+                            </div>
+                            <div>
+                                <h3>CVV</h3>
+                                <input type="number" placeholder="123" />
+                            </div>
+                        </div>
+                        <a href="#order"><button onclick="pop()">Pay Now</button></a>
+                    </form>
                 </section>
             </div>
         </div>
         <footer class="footer">
+            <div class="rows">
+                <div class="col">
+                    <h4>About Us</h4>
+                    <hr />
+                    <div class="info">
+                        <ul>
+                            <li><a href="#">Ali Abbas</a></li>
+                            <li><a href="#">alinagarkuz@gmail.com</a></li>
+                            <li><a href="#">+923144101585</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Shehbaz Karim</a></li>
+                            <li><a href="#">shehbaz@gmail.com</a></li>
+                            <li><a href="#">+923432291361</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <h4>Follow Us</h4>
+                    <hr />
+                    <div class="social">
+                        <a href="https://www.facebook.com/shehbaz.qutoshi"
+                            ><img src="../img/social/Facebook.png" alt=""
+                        /></a>
+                        <a href="https://www.linkedin.com/in/alinagari/"
+                            ><img src="../img/social/Linkedin.png" alt=""
+                        /></a>
+                        <a href="https://www.youtube.com/c/aponstudios"
+                            ><img src="../img/social/Youtube.png" alt=""
+                        /></a>
+                        <a href="https://g.dev/aliabbas"
+                            ><img src="../img/social/GoogleDev.png" alt=""
+                        /></a>
+                    </div>
+                </div>
+            </div>
             <h3 class="dev_tag">Developed with <span></span></h3>
         </footer>
+        <script>
+            function pop() {
+                alert("Order placed successsfully!");
+            }
+        </script>
     </body>
 </html>

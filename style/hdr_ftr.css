@@ -132,16 +132,10 @@
 }
 
 .footer {
-    text-align: center;
-    background-color: #e76f51b9;
-    height: 100px;
+    background: #24262b;
     clear: both;
-    margin-top: -100px;
-}
-
-.dev_tag {
-    padding-top: 75px;
-    color: white;
+    padding-top: 30px;
+    margin-top: -220px;
 }
 
 .footer h3 span::after {
@@ -155,6 +149,56 @@
     content: "♥";
 }
 
+.rows {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    width: 25%;
+    padding: 0 15px;
+    margin-right: 150px;
+}
+
+.info {
+    display: flex;
+}
+
+.info ul{
+    list-style: none;
+    margin-right: 30px;
+}
+
+.info ul li{
+    margin-bottom: 10px;
+}
+
+.info ul li a{
+    font-size: 16px;
+    color: #BBBBBB;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.info ul li a:hover{
+    color: #FFFFFF;
+    transform: translateX(5px);
+}
+
+.col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.col hr {
+    border: solid 2px #e91e63;
+    width: 50px;
+    margin-bottom: 30px;
+}
+
 @keyframes text_anim {
     0% {
         content: " by Ali Abbas";
@@ -162,4 +206,19 @@
     50% {
         content: " by Shehbaz Karim";
     }
+}
+
+.social a img{
+    width: 50px;
+    transition: all 0.2s ease;
+}
+
+.social a img:hover{
+    transform: scale(1.1);
+}
+
+.dev_tag {
+    text-align: center;
+    color: white;
+    margin-top: 30px;
 }

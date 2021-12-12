@@ -19,8 +19,8 @@ body {
 }
 
 .main {
+    padding-bottom: 200px;
     color: white;
-    padding-bottom: 100px;
     align-content: center;
     align-items: center;
     text-align: center;

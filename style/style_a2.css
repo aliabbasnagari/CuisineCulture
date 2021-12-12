@@ -20,67 +20,70 @@ body {
 
 .main {
     color: white;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
 }
 
-.pcards {
+.cards {
     margin: 20px;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
-.pcard {
-    padding: 20px;
+.card {
+    padding: 10px;
     margin: 15px;
-    width: 100%;
+    width: 200px;
     color: black;
-    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 150px 100px;
+    grid-template-areas: "image" "text";
     background: white;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
     transition: 0.3s ease;
     cursor: pointer;
 }
 
-.pcard:hover {
-    transform: scale(1.01);
-    background: rgb(250, 250, 250);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+.btn-price {
+    display: inline-flex;
+    align-items: center;
+    border: solid 2px #f44336;
 }
 
-.pcard div {
-    display: flex;
+.card-img {
+    grid-area: image;
+    background-size: cover;
+    background-position: center;
 }
 
-.pcard div div {
-    margin: 10px;
-    width: 100%;
-    display: block;
+.card-txt {
+    font-size: 12px;
+    grid-area: text;
+    margin-top: 10px;
 }
 
-.pcard input {
-    width: 100%;
-    height: 25px;
-    padding: 5px;
+.card a {
+    width: 50%;
 }
 
-.pcard button {
-    font-size: 18px;
+.card h3 {
+    color: #f44336;
+}
+.card button {
+    font-size: 14px;
     color: white;
-    background: #008cba;
+    background: #f44336;
     border: none;
     padding: 10px;
-    border-radius: 10px;
-    margin: 10px;
 }
 
-.pcard button:hover {
-    background: #00bfff;
+.card button:hover {
+    background: #cf3a2f;
 }
 
-.paycard {
-    border-radius: 8px;
-    transition: 0.3s;
-}
-.paycard:hover {
-    transform: scale(1.2);
+.card:hover {
+    transform: scale(1.1);
+    background: rgb(240, 240, 240);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
 }
