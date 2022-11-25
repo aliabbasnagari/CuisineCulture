@@ -1,149 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" href="img/icons/fav_icon.png" type="image/x-icon" />
-        <title>Cuisine Culture</title>
-        <link rel="stylesheet" href="style/hdr_ftr.css" />
-        <link rel="stylesheet" href="style/style_l.css" />
-    </head>
-    <body>
-        <div class="wrap_body">
-            <section class="title_hdr">
-                <a href="index.html">
-                    <img src="img/logos/logo.png" alt="AWSI" title="AWSI" />
-                </a>
-                <h1 style="font-size: 38px">Cuisine Culture</h1>
-            </section>
-            <header class="header">
-                <div class="nav_left">
-                    <div class="buttons">
-                        <a onclick="pop()" href="index.html">
-                            <button><span class="icohome">Home</span></button>
-                        </a>
-                        <hr />
-                        <a onclick="pop()" href="index.html">
-                            <button><span class="icomenu">Menu</span></button>
-                        </a>
-                        <hr />
-                        <a onclick="pop()" href="index.html">
-                            <button><span class="icodeals">Deals</span></button>
-                        </a>
-                        <hr />
-                        <a onclick="pop()" href="index.html">
-                            <button><span class="icocart">Cart</span></button>
-                        </a>
-                        <hr />
-                        <a onclick="pop()" href="index.html">
-                            <button>
-                                <span class="icopayment">payment</span>
-                            </button>
-                        </a>
-                        <hr />
-                    </div>
-                </div>
-                <div class="nav_right">
-                    <div>
-                        <a href="index.html">
-                            <button class="login"><span>log In</span></button>
-                        </a>
-                        <a href="included/signup.html">
-                            <button class="signup"><span>Sign up</span></button>
-                        </a>
-                    </div>
-                </div>
-            </header>
-            <div class="main">
-                <div class="forms">
-                    <form action="included/home.html" class="login_form">
-                        <div class="field_container">
-                            <input type="email" placeholder="Email Address" required />
-                        </div>
-                        <div class="field_container">
-                            <input type="Password" placeholder="Password" required />
-                            <button class="login"><span>log In</span></button>
-                        </div>
-                        <div id="sign_in_options" class="field_container">
-                            <div id="sign_in_alternatives_container"></div>
-                            <div id="remember_me_container">
-                                <input name="user[remember_me]" type="hidden" value="0" /><input
-                                    id="user_remember_me"
-                                    name="user[remember_me]"
-                                    type="checkbox"
-                                    value="1"
-                                />
-                                <label
-                                    class="login_link"
-                                    for="user_remember_me"
-                                    id="remember_me_label"
-                                    >stay signed in</label
-                                >
-                                <div>
-                                    <h4 style="float: right">
-                                        <a href="#">reset</a> your password?
-                                    </h4>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                    </form>
-                    <div id="dont_have_an_account">
-                        <h2>
-                            Are you new,
-                            <a href="included/signup.html">
-                                <button class="signup"><span>Sign up</span></button>
-                            </a>
-                            Now.
-                        </h2>
-                    </div>
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="img/icons/fav_icon.png"
+      type="image/x-icon"
+    />
+    <title>Cuisine Culture</title>
+    <link rel="stylesheet" href="style/hdr_ftr.css" />
+    <link rel="stylesheet" href="style/style_l.css" />
+  </head>
+  <body>
+    <div class="wrap_body">
+      <section class="title_hdr">
+        <a href="index.html">
+          <img src="img/logos/logo.png" alt="AWSI" title="AWSI" />
+        </a>
+        <h1 style="font-size: 38px">Cuisine Culture</h1>
+      </section>
+      <header class="header">
+        <div class="nav_left">
+          <div class="buttons">
+            <a onclick="pop()" href="index.html">
+              <button><span class="icohome">Home</span></button>
+            </a>
+            <hr />
+            <a onclick="pop()" href="index.html">
+              <button><span class="icomenu">Menu</span></button>
+            </a>
+            <hr />
+            <a onclick="pop()" href="index.html">
+              <button><span class="icodeals">Deals</span></button>
+            </a>
+            <hr />
+            <a onclick="pop()" href="index.html">
+              <button><span class="icocart">Cart</span></button>
+            </a>
+            <hr />
+            <a onclick="pop()" href="index.html">
+              <button>
+                <span class="icopayment">payment</span>
+              </button>
+            </a>
+            <hr />
+          </div>
         </div>
-        <footer class="footer">
-            <div class="rows">
-                <div class="col n1">
-                    <h4>About Us</h4>
-                    <hr />
-                    <div class="info">
-                        <ul>
-                            <li><a href="#">Ali Abbas</a></li>
-                            <li><a href="#">alinagarkuz@gmail.com</a></li>
-                            <li><a href="#">+923144101585</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">Shehbaz Karim</a></li>
-                            <li><a href="#">shehbaz@gmail.com</a></li>
-                            <li><a href="#">+923432291361</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col n2">
-                    <h4>Follow Us</h4>
-                    <hr />
-                    <div class="social">
-                        <a href="https://www.facebook.com/shehbaz.qutoshi"
-                            ><img src="img/social/Facebook.png" alt=""
-                        /></a>
-                        <a href="https://www.linkedin.com/in/alinagari/"
-                            ><img src="img/social/Linkedin.png" alt=""
-                        /></a>
-                        <a href="https://www.youtube.com/c/aponstudios"
-                            ><img src="img/social/Youtube.png" alt=""
-                        /></a>
-                        <a href="https://g.dev/aliabbas"
-                            ><img src="img/social/GoogleDev.png" alt=""
-                        /></a>
-                    </div>
-                </div>
+        <div class="nav_right">
+          <div>
+            <a href="index.html">
+              <button class="login"><span>log In</span></button>
+            </a>
+            <a href="included/signup.html">
+              <button class="signup"><span>Sign up</span></button>
+            </a>
+          </div>
+        </div>
+      </header>
+      <div class="main">
+        <div class="forms">
+          <form action="included/home.html" class="login_form">
+            <div class="field_container">
+              <input
+                value="test@gmail.com"
+                type="email"
+                placeholder="Email Address"
+                required
+              />
             </div>
-            <h4 class="dev_tag">Developed with <span></span></h4>
-        </footer>
-        <script>
-            function pop() {
-                alert("Login to Access!");
-            }
-        </script>
-    </body>
+            <div class="field_container">
+              <input type="Password" placeholder="Password" required />
+              <button class="login"><span>log In</span></button>
+            </div>
+            <div id="sign_in_options" class="field_container">
+              <div id="sign_in_alternatives_container"></div>
+              <div id="remember_me_container">
+                <input name="user[remember_me]" type="hidden" value="0" /><input
+                  id="user_remember_me"
+                  name="user[remember_me]"
+                  type="checkbox"
+                  value="1"
+                />
+                <label
+                  class="login_link"
+                  for="user_remember_me"
+                  id="remember_me_label"
+                  >stay signed in</label
+                >
+                <div>
+                  <h4 style="float: right">
+                    <a href="#">reset</a> your password?
+                  </h4>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </form>
+          <div id="dont_have_an_account">
+            <h2>
+              Are you new,
+              <a href="included/signup.html">
+                <button class="signup"><span>Sign up</span></button>
+              </a>
+              Now.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="rows">
+        <div class="col n1">
+          <h4>About Us</h4>
+          <hr />
+          <div class="info">
+            <ul>
+              <li><a href="#">Ali Abbas</a></li>
+              <li><a href="#">alinagarkuz@gmail.com</a></li>
+              <li><a href="#">+923144101585</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Shehbaz Karim</a></li>
+              <li><a href="#">shehbaz@gmail.com</a></li>
+              <li><a href="#">+923432291361</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col n2">
+          <h4>Follow Us</h4>
+          <hr />
+          <div class="social">
+            <a href="https://www.facebook.com/shehbaz.qutoshi"
+              ><img src="img/social/Facebook.png" alt=""
+            /></a>
+            <a href="https://www.linkedin.com/in/alinagari/"
+              ><img src="img/social/Linkedin.png" alt=""
+            /></a>
+            <a href="https://www.youtube.com/c/aponstudios"
+              ><img src="img/social/Youtube.png" alt=""
+            /></a>
+            <a href="https://g.dev/aliabbas"
+              ><img src="img/social/GoogleDev.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <h4 class="dev_tag">Developed with <span></span></h4>
+    </footer>
+    <script>
+      function pop() {
+        alert("Login to Access!");
+      }
+    </script>
+  </body>
 </html>

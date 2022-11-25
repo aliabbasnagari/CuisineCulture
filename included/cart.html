@@ -65,13 +65,13 @@
           <h3>Your Order:</h3>
           <hr />
           <div>
-            <ul>
+            <ul id="cart_items">
               <li>Karahi (1 full)</li>
               <li>Kebab (double)</li>
               <li>Chapshoro (3 pcs)</li>
               <li>Salad (1)</li>
             </ul>
-            <ul>
+            <ul id="item_price">
               <li>Rs 900/-</li>
               <li>Rs 900/-</li>
               <li>Rs 1650/-</li>
@@ -79,7 +79,7 @@
             </ul>
           </div>
           <hr />
-          <h2>Total: Rs 3630/-</h2>
+          <h2 id="total_pay"></h2>
           <div onclick="getList()">
             <a href="payment.html"><button>Proceed to payment</button></a>
             <a href="home.html"><button>Cancel order</button></a>
@@ -126,6 +126,6 @@
       </div>
       <h4 class="dev_tag">Developed with <span></span></h4>
     </footer>
-    <script src="../scripts/bill_calculator.js"></script>
+    <script src="../scripts/cart.js"></script>
   </body>
 </html>
